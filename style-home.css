@@ -1,0 +1,49 @@
+
+.titulo-princ{
+    padding-left: 30px;
+}
+
+img {
+    width: 100%;
+}
+
+.principal {
+    background: #CCCCCC;
+    padding: 20px;
+}
+
+.titulo-cent {
+    text-align: center; 
+}
+
+p {
+    text-align: center;
+}
+
+em strong {
+    color: crimson;
+}
+
+#mision {
+    font-size: 20px;
+}
+
+.diferenciales {
+    background: FFFFFF;
+    padding: 30px;
+}
+
+.items {
+    font-style: italic;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagenDiferenciales {
+    width: 50%;
+}

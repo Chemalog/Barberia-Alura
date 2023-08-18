@@ -1,0 +1,362 @@
+body{
+    color: #666;
+    font-family: 'Merriweather', serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;    
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #2c2b2b;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    /*box-shadow*/
+    background-color: #BBBBBB;
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: rgba( 50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+nav a:hover {
+    color: #c78c19;
+    box-shadow: inset rgba( 50, 50, 93, 0.25) 0px 6px 12px -2px,
+    inset rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    box-sizing: border-box;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    /*box-shadow*/
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: rgba( 50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.productos li:hover {
+    border-color: #c78c19;
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.productos li:hover h2 {
+    font-size: 33px;
+}
+
+.p-d {
+    font-size: 16px;
+}
+
+.p-p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    background: url(imag/bg.jpg);
+    padding: 25px;
+}
+
+.copyright {
+    color: #BBBBBB;
+    font-size: 15px;
+    margin: 15px;
+}
+
+main {
+    width: 940px;
+    margin: 35px auto;
+    display: block;
+}
+
+form {
+    display: block;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 40px 0;
+}
+
+form label {
+    margin: 10px 0;
+    display: block;
+    /*font-size: 20px;*/
+    /*margin: 0 0 10px;*/
+    /*label----------------------
+    font-size: 100%;
+    position: absolute;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);*/
+}
+/*
+form input {
+    display: block;
+    margin: 0 0 20px;
+    /*padding: 10px 25px;
+    width: 50%;*/
+    /*input----------------------
+    font-size: 100%;
+    padding: 0.9em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+}
+
+form :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: #e8e8e8;
+}*/
+
+.inputGroup {
+    display: block;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0 1em 0;
+    max-width: 550px;
+    position: relative;
+}
+
+.inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.4em;
+    margin-left: 0.6em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+}
+
+.inputGroup input {
+    font-size: 100%;
+    margin-top: 2px;
+    padding: 0.8em;
+    padding-left: 0.5em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+    border-radius: 25px;
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 0;
+    padding: 0.4em;
+    background-color: #e8e8e8;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+}
+
+textarea {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.que- {
+    margin: 13px 0;
+}
+
+.butt {
+    margin: 20px 0;
+    display: block;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+}
+
+.butt:hover {
+    transform: scale(1.05);
+}
+
+.butt:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+
+/* ------------- CSS - HOME ------------- */
+
+.banner {
+    width: 100%;
+}
+
+.principal {
+    padding: 3em;
+    background: white;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-prin {
+    color: #333232f3;
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(white, #888888);
+}
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales{
+    color: #000000;
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagenDiferenciales {
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 10px #000000;
+}
+
+.imagenDiferenciales:hover {
+    opacity: 0.7;
+}
+
+.video {
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width:480px){
+    body{
+        background: red;
+    }
+}
+
